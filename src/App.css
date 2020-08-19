@@ -15,21 +15,24 @@
 
 .like-button{
   color:white;
-  background-image: url(./heart.png);
+  background-image: url(./like.png);
   background-size: 100%;
   padding: 15px;
   border: none;
+  background-color:white;
+  outline: none;
  
   
 
 }
 .dislike-button{
   background-color: none;
-  background-image: url(./review.png);
+  background-image: url(./finger.png);
   background-size: 100%;
   padding: 15px;
   border: none;
-  background-color: none;
+  background-color:white;
+  outline: none;
   
 
 }
@@ -37,23 +40,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
 }
 .header {
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  align-items: center;
+  align-content: center;
+  flex-basis: auto;
+}
+.cards{
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: wrap;
+  align-content: center;
+  margin: 0 auto;
+
 }
 .votes{
   display: flex;
+  width: 40%;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
 }
 .title{
-  padding: 10px;
+  padding: 10px 20px;
   border: lightgray .5px solid;
-  margin-top: 15px;
+  border-radius: 10%;
+  margin: 10px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+
+.Individual{
   align-items: center;
 }
