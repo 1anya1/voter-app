@@ -73,4 +73,12 @@
   padding-bottom: 10px;
   
 }
-
+.search{
+  width: 20%;
+  display: flex;
+  align-content: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: lightgray .5px solid;
+}

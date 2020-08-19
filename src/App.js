@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import products from './data'
 
@@ -9,9 +8,11 @@ class App extends React.Component{
     this.state={
       //our intial state is empty
       products:[],
+      filter:''
     }
     this.handleDislike=this.handleDislike.bind(this)
     this.handleLike=this.handleLike.bind(this)
+    this.handleChange= this.handleChange.bind(this)
    
     
   }
@@ -19,7 +20,11 @@ class App extends React.Component{
   componentDidMount(){
     this.setState({products:products})
   }
-
+  //search function
+  handleChange(event){
+    console.log(this.handleChange)
+    this.setState({filter: event.target.value})
+  }
   //creatinf a function that will interact with a child component function that will ultimately intake the id
   handleDislike(id){
     // console.log('this is the id ;) ' +id)
@@ -53,13 +58,24 @@ class App extends React.Component{
       this.setState({products: updatedProducts})
   }
 
+
+
   render(){
     const products =this.state.products.sort((a,b)=>b.votes-a.votes)
-    console.log(products)
-    console.log(this.state.products)
-    let product= this.state.products.map(product=>(
+    const filter = this.state.filter;
+    const lowercasedFilter= filter.toLowerCase();
+    const filteredData=products.filter(item=>{
+      return Object.keys(item).some(key=>
+        typeof item[key]=== 'string' && item[key].toLowerCase().includes(lowercasedFilter)
+        )
+    })
+    
+    
+    // console.log(products)
+    // console.log(this.state.products)
+    let filtered = filteredData.map((product,id)=>(
       <Individual
-      key={product.id}
+      key={id}
       id={product.id}
       description={product.description}
       title={product.title}
@@ -75,7 +91,8 @@ class App extends React.Component{
     return(
       <div className='main-container'>
         <h1 className='titel'>MY ANIMALS</h1>
-        <div className='cards'>{product}</div>
+        <input  className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
+        <div className='cards'>{filtered}</div>
       </div>
      
     )
