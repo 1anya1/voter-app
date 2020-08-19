@@ -20,8 +20,12 @@ class App extends React.Component{
     this.setState({products:products})
   }
 
+  //creatinf a function that will interact with a child component function that will ultimately intake the id
   handleDislike(id){
     // console.log('this is the id ;) ' +id)
+
+    //assigning new value to one of the properties without overwriting the state array 
+    //Object assign is responsible for that takes in 3 parameters
     let updatedProducts= this.state.products.map(item=>{
       if(item.id===id){
         return Object.assign({}, item, {
