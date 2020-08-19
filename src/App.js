@@ -33,9 +33,12 @@ class App extends React.Component{
     })
     this.setState({products: updatedProducts})
   }
+
+
   
   handleLike(id){
     // console.log(` this is me likeing `+id)
+   
     let updatedProducts= this.state.products.map(item=>{
       if(item.id===id){
         return Object.assign({}, item, {
@@ -47,7 +50,8 @@ class App extends React.Component{
   }
 
   render(){
-  
+    const products =this.state.products.sort((a,b)=>b.votes-a.votes)
+    console.log(products)
     console.log(this.state.products)
     let product= this.state.products.map(product=>(
       <Individual
@@ -66,7 +70,7 @@ class App extends React.Component{
     ))
     return(
       <div className='main-container'>
-        <h1>MY LIST</h1>
+        <h1 className='titel'>MY ANIMALS</h1>
         <div className='cards'>{product}</div>
       </div>
      
@@ -100,11 +104,11 @@ buttonLike(){
           </div>
           
           <a>{this.props.url}</a>
-          <h5 className='description'>{this.props.description}</h5>
+          <h3 className='description'>{this.props.description}</h3>
           <div className='votes'>
           <button  onClick={this.buttonLike} className='like-button' />
           <button onClick={this.buttonDislike} className='dislike-button'></button>
-          {this.props.votes}
+          <h3>{this.props.votes}</h3>
         </div>
         </div>
         

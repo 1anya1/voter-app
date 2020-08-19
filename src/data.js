@@ -4,56 +4,55 @@ function generateVoteCount() {
 const products = [
     {
       id: 1,
-      title: 'Love Dogs',
-      description: 'On-demand sand castle construction expertise.',
+      title: 'Maltipooch',
+      description: 'This is my cute little pet animal.',
       url: '#',
       votes: generateVoteCount(),
-      submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
+      submitterAvatarUrl: 'https://photos.puppyspot.com/2/listing/614002/photo/5152364_medium.jpg',
       
     },
     {
         id: 2,
-        title: 'Yellow Pail',
-        description: 'On-demand sand castle construction expertise.',
+        title: 'Fluffy Bunnies',
+        description: 'This is my cute little pet animal.',
         url: '#',
         votes: generateVoteCount(),
-        submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
+        submitterAvatarUrl: "https://i.pinimg.com/originals/35/e8/40/35e8407cca3a26188e78b75847b2d883.jpg"
         
     },
     {
         id: 3,
-        title: 'Love Dogs',
-        description: 'On-demand sand castle construction expertise.',
+        title: 'Piglets',
+        description: 'This is my cute little pet animal.',
         url: '#',
         votes: generateVoteCount(),
-        submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
+        submitterAvatarUrl: 'https://i.pinimg.com/originals/54/85/bc/5485bc4a91898ae61c679fd10cee33c8.jpg'
         
       },
       {
           id: 4,
-          title: 'Yellow Pail',
-          description: 'On-demand sand castle construction expertise.',
+          title: 'Giraffy',
+          description: 'This is my cute little pet animal.',
           url: '#',
           votes: generateVoteCount(),
-          submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
+          submitterAvatarUrl: 'https://static.boredpanda.com/blog/wp-content/uuuploads/cute-baby-animals/cute-baby-animals-2.jpg',
           
       },
       {
         id: 5,
-        title: 'Love Dogs',
-        description: 'On-demand sand castle construction expertise.',
+        title: 'Foxy',
+        description: 'This is my cute little pet animal.',
         url: '#',
         votes: generateVoteCount(),
-        submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
-        
+        submitterAvatarUrl: 'https://i.pinimg.com/564x/e6/44/ea/e644eacfa75ecb5cb73e220bb0c7ef01.jpg'
       },
       {
           id: 6,
-          title: 'Yellow Pail',
-          description: 'On-demand sand castle construction expertise.',
+          title: 'Kitty',
+          description: 'This is my cute little pet animal.',
           url: '#',
           votes: generateVoteCount(),
-          submitterAvatarUrl: 'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=1.00xw:0.669xh;0,0.190xh&resize=1200:*',
+          submitterAvatarUrl: 'https://cdn.mos.cms.futurecdn.net/vChK6pTy3vN3KbYZ7UU7k3-1200-80.jpg',
           
       }
 ]

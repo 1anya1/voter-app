@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+.main-container{
+  font-family: 'Montserrat', sans-serif;
+}
 .profile-image{
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   overflow: hidden;
   border-radius: 50%;
 }
 .imageCenter{
-  display: flex;
-  align-items: center;
   margin: 0 auto;
-  margin-left: -55%; 
-  height: 100%;
+  height: 110%;
   width: auto;
 }
 
@@ -21,9 +23,6 @@
   border: none;
   background-color:white;
   outline: none;
- 
-  
-
 }
 .dislike-button{
   background-color: none;
@@ -33,38 +32,25 @@
   border: none;
   background-color:white;
   outline: none;
-  
-
-}
-.main-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
 }
 .header {
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
-  align-items: center;
-  align-content: center;
-  flex-basis: auto;
+   /* min-width: 30%; */
+   max-width: 90%;
 }
 .cards{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-content: center;
-  margin: 0 auto;
-
+  align-items: center;
 }
 .votes{
   display: flex;
-  width: 40%;
   flex-direction: row;
   align-items: center;
   margin-bottom: 20px;
+  width: 40%;
   justify-content: space-between;
+  
 }
 .title{
   padding: 10px 20px;
@@ -74,9 +60,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+
+}
+.titel{
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: lightgray .5px solid;
+  width: 40%;
+  margin-bottom: 30px;
+  margin-top: 25px;
+  padding-bottom: 10px;
+  
 }
 
-
-.Individual{
-  align-items: center;
-}
