@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.profile-image{
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.imageCenter{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: -55%; 
+  height: 100%;
+  width: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.like-button{
+  color:white;
+  background-image: url(./heart.png);
+  background-size: 100%;
+  padding: 15px;
+  border: none;
+ 
+  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
+.dislike-button{
+  background-color: none;
+  background-image: url(./review.png);
+  background-size: 100%;
+  padding: 15px;
+  border: none;
+  background-color: none;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.main-container{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.votes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title{
+  padding: 10px;
+  border: lightgray .5px solid;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
