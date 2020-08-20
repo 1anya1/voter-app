@@ -122,10 +122,10 @@ buttonLike(){
         <div className='title'>
           <h1>{this.props.title}</h1>
           <div className='profile-image'>
-            <img  className='imageCenter' src={this.props.submitterAvatarUrl} /> 
+            <img  className='imageCenter' alt={this.props.title} src={this.props.submitterAvatarUrl} /> 
           </div>
           
-          <a>{this.props.url}</a>
+          <a href={this.props.url}>{this.props.url}</a>
           <p className='description'>{this.props.description}</p>
           <div className='votes'>
           <button  onClick={this.buttonLike} className='like-button' />
