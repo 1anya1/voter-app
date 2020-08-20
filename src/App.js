@@ -90,7 +90,8 @@ class App extends React.Component{
     ))
     return(
       <div className='main-container'>
-        <h1 className='titel'>MY ANIMALS</h1>
+        <h1 className='text header'>MY ANIMALS</h1>
+       
         <input  className='search' placeholder='SEARCH' value={filter} onChange={this.handleChange}></input>
         <div className='cards'>{filtered}</div>
       </div>
@@ -117,7 +118,7 @@ buttonLike(){
   render(){
     
     return(
-      <div className='header'>
+     
         <div className='title'>
           <h1>{this.props.title}</h1>
           <div className='profile-image'>
@@ -125,17 +126,17 @@ buttonLike(){
           </div>
           
           <a>{this.props.url}</a>
-          <h3 className='description'>{this.props.description}</h3>
+          <p className='description'>{this.props.description}</p>
           <div className='votes'>
           <button  onClick={this.buttonLike} className='like-button' />
           <button onClick={this.buttonDislike} className='dislike-button'></button>
           <h3>{this.props.votes}</h3>
         </div>
         </div>
+       
         
         
 
-      </div>
     )
   }
 
